@@ -23,6 +23,7 @@ public class NewCreate  {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
         driver.findElement(By.name("username")).sendKeys("hari.radhakrishnan@testleaf.com");
+        //stalinindialearn21@gmail.com
         driver.findElement(By.xpath("//*[text()='Continue']")).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
         WebElement pass = driver.findElement(By.name("password"));
